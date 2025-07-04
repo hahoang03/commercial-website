@@ -1,0 +1,127 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #87C159, #058240);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position:relative;
+    min-height: 26px;
+    /* Chiều cao thẻ li bị lẻ nên phải để min-height cho chiều cao số chẵn lại */
+}
+
+.header__navbar-item--has-qr:hover .header__qr {
+    /* CSS will affect header qr when header__navbar-item--has-qr is hovered */
+    display: block;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+.header__navbar-item,
+.header__navbar-item-li {
+   display: inline-block;
+   font-size: 1.4rem;
+   color: var(--white-color);
+   text-decoration: none;
+   font-weight: 300;
+}
+
+.header__navbar-item,
+.header__navbar-item-li,
+.header__navbar-item-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.header__navbar-item:hover,
+.header_navbar-icon:hover,
+.header__navbar-item-li:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+}
+.header__navbar-item--bold {
+    font-weight: 500;
+}
+
+.header__navbar-item--seperate::after {
+    content: "";
+    display:block;
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    background-color: #caeea2;
+    right: -10px;
+    top:50%; 
+    transform: translateY(-50%);
+    /* Trừ 50% của chính nó, Y ctheo chiều dọc  */
+}
+
+.header__navbar-item-icon {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header_navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+.title-no-pointer {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/* Header QR code */
+
+.header__qr {
+    width: 185px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 120%; 
+    /* 100% the cha, dung ngay sau the cha*/
+    padding: 8px;
+    border-radius: 2px;
+    display: none; 
+    animation: fadeIn ease-in 0.3s; 
+    
+}
+
+.header__qr::before {
+    content: "";
+    left:0;
+    top: -15px;;
+    width: 100%;
+    height:20px;
+    position: absolute;
+    display: block;
+}
+
+
+
+.header_qr-img {
+    width: 100%;
+}
+
+.header-gg-app {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-each {
+height: 15.5px;
+}
+
+
+

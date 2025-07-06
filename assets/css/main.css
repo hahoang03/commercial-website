@@ -20,6 +20,11 @@
     display: block;
 }
 
+.header__navbar-item--show:hover .header__noti {
+    display:block
+}
+
+
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
@@ -94,7 +99,7 @@
     padding: 8px;
     border-radius: 2px;
     display: none; 
-    animation: fadeIn ease-in 0.3s; 
+    animation: fadeIn ease 0.01s; 
     
 }
 
@@ -134,9 +139,51 @@ height: 15.5px;
     width: 404px;
     border: 1px solid #D3D3D3;
     background-color: var(--white-color);
-    
-    
+    cursor: default; 
+    transform-origin: calc(100% - 20px) top ;
+    animation: HeaderNotiGrow ease-in 0.3s;
+    -webkit-animation: HeaderNotiGrow ease-in 0.3s;
+    -ms-animation: HeaderNotiGrow ease-in 0.3s;
+    -o-animation: HeaderNotiGrow ease-in 0.3s;
+    -moz-animation: HeaderNotiGrow ease-in 0.3s;
+    will-change: opacity,transform;
+    display:none;
 }
+
+.header__noti::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -28px;
+}
+
+.header__noti::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    top:-15px;
+    right: 0;
+}
+
+
+@keyframes HeaderNotiGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
 
 .header__noti-header {
     height: 40px;
@@ -150,6 +197,7 @@ height: 15.5px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
+    user-select: none;
 }
 
 .header_noti-list {
@@ -169,6 +217,18 @@ height: 15.5px;
     padding: 12px;
     background-color: rgba(5, 130, 64,0.08);
  
+}
+
+.header_noti-link2{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+}
+
+.header_noti-link2:hover {
+    background-color:rgba(128, 128, 128,0.1);
 }
 
 .header_noti-img {
@@ -195,15 +255,18 @@ height: 15.5px;
     font-size: 1.2rem;
     color: gray;
     line-height: 2rem;
+    margin-top: 4px;
 }
 
 .header_noti-footer {
-    text-align: center;
-    display: block;
-    padding: 5px 5px;
+    display: flex;
 }
 
 .header_noti-footer-btn {
     text-decoration: none;
     color: black;
+    padding: 8px 164px;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 400;
 }

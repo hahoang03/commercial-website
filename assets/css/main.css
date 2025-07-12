@@ -388,11 +388,16 @@ height: 15.5px;
 .auth-form__help-link {
     font-size: 1.4rem;
     text-decoration: none;
+    color: #939393;
 }
 
 .auth-form__help-seperate {
     display: block;
-    height: 15px;
+    height: 22px;
+    margin: -3px 16px 0;
     border-left: 1px solid var(--border-color);
 }
 
+.auth-form__help-forgot {
+    color: var(--primary-color);
+}

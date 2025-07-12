@@ -87,6 +87,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.6rem;
    
 }
 
@@ -111,6 +112,6 @@ html {
 .btn.btn--size-s {
     height: 32px;
     font-size: 12px;
-     padding:0 8px;
+    padding:0 8px;
 
 }

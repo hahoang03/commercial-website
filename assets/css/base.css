@@ -44,6 +44,18 @@ html {
 }
 /* Từ khi xuất hiện có opacity=0, tới khi xuất hiện có animation =1 */
 
+@keyframes growth {
+     from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+
+
+
 /* Modal */
 .modal {
     position: fixed;
@@ -61,14 +73,19 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    animation: fadeIn linear 0.1;
+    animation: fadeIn linear 0.1s;
 }
 
+
 .modal__body {
+  --growth-from: 0.7;
+  --growth-to: 1;
+  /* Chuyền từ 70% cho tới kích thước nguyên vẹn của nó là 1 */
   margin: auto;
   position: relative;
   /* Để nằm trên lớp phủ */
   z-index: 1;
+  animation: growth linear 0.1s;
 }
 
 /* Button style */

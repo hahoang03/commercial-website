@@ -315,38 +315,619 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter__label">Sắp xếp theo</span>
-                            <button class="btn">Phổ biến</button>
-                            <button class="btn btn--primary">Mới nhất</button>
-                            <button class="btn">Bán chạy</button>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
 
-                            <div class="select-price">
-                                <div class="select-price__label">Giá</div>
-                                <i class="fa-solid fa-angle-down"></i>
+                            <!-- List price option -->
+                            <div class="select-input">
+                                <div class="select-input__label">Giá</div>
+                                <i class="select-input__icon fa-solid fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div class="home--filter__page">
                                 <span class="home--filter__page-num">
                                     <span class="home--filter__page-current">1</span> / 14
                                 </span>
+
                                 <div class="home--filter__page-navigate">
                                     <a href="" class="home--filter__page-navigate-btn">
-                                        <i class="fa-solid fa-angle-left"></i>
+                                        <i class="home--filter__page-navigate-icon1 fa-solid fa-angle-left"></i>
                                     </a>
+
                                     <a href="" class="home--filter__page-navigate-btn">
-                                        <i class="fa-solid fa-angle-right"></i>
+                                        <i class="home--filter__page-navigate-icon2 fa-solid fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
 
 
                         </div>
+
+                        <!-- Product -->
+                        <div class="home-product">
+                            <!-- Grid -> Row -> column -->
+                            <div class="grid__row">
+                            <!-- Product item -->
+                                <!-- Item 1 -->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 2 -->
+<div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 5 -->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 6 -->
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 7 -->
+                                 <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 8  -->
+                                 <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 9 -->
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <!-- Item 10 -->
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url('./assets/img/st25.jpg');"></div>
+                                        <h4 class="home-product-item__name">Gạo ST25 túi 5kg gạo thơm cao cấp dẻo ngon
+                                            cơm trắng hạt dài mềm ngọt dễ nấu</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">299.999đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like" onclick="Like(this)">
+                                                <i class="home-product-item__like-icon-before fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-after fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Miquafood</span>
+                                            <span class="home-product-item__origin-name">Sóc Trăng</span>
+                                        </div>
+
+                                        <!-- test gap -->
+                                        <hr style="border:none; height: 0.1px">                                        
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span >Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-label">
+                                                GIẢM
+                                            </span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination__icon fa-solid fa-angle-left">
+                                    </i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">15</a>
+                            </li>
+
+
+                             <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination__icon fa-solid fa-angle-right">
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
-
-
                 </div>
             </div>
-
-
         </div>
 
         <footer class="footer"></footer>
@@ -459,8 +1040,7 @@
         </div>
     </div> -->
 
-
-
+    <script src="./run.js"></script>
 
 
 </body>

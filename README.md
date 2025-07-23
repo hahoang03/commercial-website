@@ -1,8 +1,8 @@
-<img width="1375" height="675" alt="website" src="https://github.com/user-attachments/assets/52bf28ed-0f3c-42af-855d-ab0afec4b7be" /># Lâm Đại Phát Store Website
+# Lâm Đại Phát Store Website
 
 This is a personal project for a fictional retail store named **Lâm Đại Phát**, designed and developed to practice full-stack web development and UI/UX design skills. The website provides a clean interface where customers can browse products and have a shopping experience.
 
-## 🔍 Features
+# 🔍 Features
 
 - Homepage with featured products and promotions
 - Register and Sign in page

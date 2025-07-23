@@ -21,6 +21,7 @@ This is a personal project for a fictional retail store named **Lâm Đại Phá
 <img width="1375" height="675" alt="website" src="https://github.com/user-attachments/assets/8d82591a-ddf8-46d8-8402-aad29de05e9d" />
 <img width="1375" height="675" alt="đăng ký" src="https://github.com/user-attachments/assets/b266c0e8-d9c1-4a2d-9373-6b8c15727afc" />
 <img width="1375" height="675" alt="dang nhap" src="https://github.com/user-attachments/assets/9ab2e426-51cd-41b6-b143-3bf8748d2de8" />
+<img width="1375" height="675" alt="footer" src="https://github.com/user-attachments/assets/6ee1fda6-648d-49a4-8a60-8ec9e2589a7d" />
 
 
 ## 📌 Notes

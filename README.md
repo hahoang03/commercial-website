@@ -2,7 +2,7 @@
 
 This is a personal project for a fictional retail store named **Lâm Đại Phát**, designed and developed to practice full-stack web development and UI/UX design skills. The website provides a clean interface where customers can browse products and have a shopping experience.
 
-# 🔍 Features
+## 🔍 Features
 
 - Homepage with featured products and promotions
 - Register and Sign in page
